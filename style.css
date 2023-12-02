@@ -1,0 +1,40 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+
+@media (max-width: 1280px) {
+    header{
+        grid-template-columns: repeat(28, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    header{
+        grid-template-columns: repeat(24, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    header{
+        grid-template-columns: repeat(20, 1fr);
+    }
+}
+@media (max-width: 580px) {
+    header{
+        grid-template-columns: repeat(16, 1fr);
+    }
+}
+@media (max-width: 424px) {
+    header{
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
